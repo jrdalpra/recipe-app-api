@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
-MAINTENER José Volmei Dal Prá Junior
+MAINTAINER José Volmei Dal Prá Junior
 
 ENV PYTHONUNBUFFERED 1
 
@@ -11,5 +11,5 @@ WORKDIR /app
 COPY ./app /app
 
 
-RUN adduer -D user
+RUN adduser -D user
 USER user
