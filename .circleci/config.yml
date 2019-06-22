@@ -13,6 +13,7 @@ jobs:
           command: |
             sudo pip install pipenv
             pipenv install
+            pip install -r /requirements.txt
       - run:
           command: |
             cd app && pipenv run python manage.py test && flake8
