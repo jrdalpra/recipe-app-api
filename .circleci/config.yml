@@ -4,10 +4,9 @@ jobs:
     working_directory: ~/app
     docker:
       - image: circleci/python:3.7.2
-        environment:
-          PIPENV_VENV_IN_PROJECT: true
     steps:
       - checkout
+      - run: ls -ltra
       - run: sudo chown -R circleci:circleci /usr/local/bin
       - run: sudo chown -R circleci:circleci /usr/local/lib/python3.7/site-packages
       - restore_cache:
