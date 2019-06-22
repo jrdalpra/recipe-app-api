@@ -15,4 +15,4 @@ jobs:
             pipenv install
       - run:
           command: |
-            cd app && pipenv run python manage.py test
+            cd app && pipenv run python manage.py test && flake8
