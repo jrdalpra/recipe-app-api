@@ -32,7 +32,7 @@ class ModelTests(TestCase):
             )
 
     def test_when_creating_a_new_user_user_result_must_be_valid(self):
-        root = get_user_model().objects.create_super_user(
+        root = get_user_model().objects.create_superuser(
             'root@mycompany.com',
             'anything321123'
         )
